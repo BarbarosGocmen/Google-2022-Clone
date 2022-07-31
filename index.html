@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+
+<body>
+
+    <!-- Alt satır = İçinde olan divler rahat hareket edebilsin diye açılmış satır! -->
+    <!-- display:flex; divlerin-elemanların özgürce hareket etmesini sağlar. -->
+    <!-- justify-content: end; yatayda (satırda) satırın sonuna hizalanmasını sağlar. -->
+    <div style="display:flex; justify-content: end; margin-top: 20px;">
+
+        <!-- Alt satır = Linkleri birlikte hareket ettirmek için açılan div. -->
+        <div style="margin-top: 8px; margin-right: 20px;">
+
+            <!-- Alt satır = Gmail linki. -->
+            <!-- "style="text-decoration: none;" link altında olan düz çizgiyi yok eder! -->
+            <!-- color:black ile link renklerini siyah yaparız! -->
+            <a style="text-decoration: none; color:black; margin-right: 20px;" href="">Gmail</a>
+
+
+            <!-- Alt satır = Görseller linki. -->
+            <!-- "style="text-decoration: none;" link altında olan düz çizgiyi yok eder! -->
+            <!-- color:black ile link renklerini siyah yaparız! -->
+            <a style="text-decoration: none; color:black; margin-right: 30px;" href="">Görseller</a>
+
+        </div>
+
+        <!-- Alt satır = Logoları birlikte hareket ettirmek için açılan div. -->
+        <div style="margin-right: 10px;">
+
+            <!-- Alt satır = Apps logosu. -->
+            <img style="height: 16px; margin-bottom: 6px; margin-right: 25px;"
+                src="https://raw.githubusercontent.com/Kodluyoruz/taskforce/3232e9d5b5a852f1bd7fb8ace1660ba93cf781bc/css/odev2/google_homepage/assets/appsbutton.svg"
+                alt="">
+
+            <!-- Alt satır = Başharf logosu. -->
+            <!-- border-radius: 50px; yuvarlağa dönüştürmeye yarar. -->
+            <img style="border-radius: 50px;"
+                src="https://lh3.googleusercontent.com/ogw/AOh-ky28XeVjhTG9uAKeGP6HCbqoOu2wkChm_pLYpOkV=s32-c-mo"
+                alt="">
+        </div>
+
+    </div>
+
+
+
+
+    <!-- Alt satır = Google Logosu. -->
+    <!-- Aşağıda açılan center google logosunu en üstten orta hizaya getirmeye yarıyor! -->
+    <!-- Img'nin içinde ki açılan style ve içine yazılan "margin-top: 155;px" üst-orta olan google logosunu aşağı doğru kaydırarak orta-orta yapmaya yarıyor! -->
+    <center>
+        <img style="margin-top: 155px;"
+            src="https://github.com/Kodluyoruz/taskforce/blob/main/css/odev2/google_homepage/assets/logo.png?raw=true"
+            alt="">
+    </center>
+
+    <center>
+        <!-- Alt satır = Arama çubuğunu css kısmı ile özelleştirmek için açılan satır. -->
+        <div class="search">
+
+           <!-- Alt satır = Hazır icon için açılan satır. -->
+            <span style="margin-top: 5px; padding-left:15px ;" class="material-icons">
+                search
+            </span>
+
+            <!-- Alt satır = Arama çubuğu. -->
+            <!-- border: none; tıklanmamış olan arama çubuğunun çizgilerini yok eder. -->
+            <!-- outline: none; tıklanmış olan arama çubuğunun çizgilerini yok eder. -->
+            <input style="border: none; outline: none; padding-left: 5px;" type="search" size="65px" ;>
+            
+            <!-- Alt satır = Hazır icon için açılan satır. -->
+            <span style="padding-left: 80px;" class="material-icons">
+                mic
+            </span>
+            
+        </div>
+    </center>
+
+
+
+
+
+
+</body>
+
+</html>
